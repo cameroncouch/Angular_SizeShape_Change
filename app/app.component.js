@@ -3,12 +3,12 @@
 const diameter = {
     template: `
     <input ng-model="$ctrl.number" type="number">
-    <input ng-click="$ctrl.changeClass();" type="checkbox">Change to circle</input> 
+    <input ng-click="$ctrl.changeClass();" type="checkbox"><p>Change to circle</p></input> 
     <div ng-style="{height: $ctrl.number +'px', width: $ctrl.number + 'px'}" ng-class="{'shape': $ctrl.enabled, 'circle': $ctrl.disabled}"</div>
     `,
     controller: [function() {
         const vm = this;
-        vm.number = 0;
+        vm.number = 50;
         vm.changeSize = function() {
             vm.number = vm.number;
             console.log(vm.number);

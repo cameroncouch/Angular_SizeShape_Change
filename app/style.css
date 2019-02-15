@@ -5,6 +5,10 @@ body {
 input {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline;
+}
 .shape {
     margin-top: 20px;
     background-color: white;
